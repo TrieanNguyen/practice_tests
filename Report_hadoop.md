@@ -44,6 +44,22 @@ Slave gồm 1 hoặc nhiều DataNode để lưu trữ dữ liệu.
 - MapReduce cũng sử dụng kiến trúc master/slave:
    - Master - Job Tracker: Lên lịch cho các task và phân công xuống và theo dõi Tasktracker.
    - Slave - Task Tracker: Theo dõi các task và báo cáo trạng thái các task cho Job Tracker
+##### 1.3.4. YARN (Yet Another Resource Negotiator)
+* YARN là một framework cung cấp các daemon và API cần thiết giúp phát triển ứng dụng phân tán.
+* YARN chịu trách nhiêm xử lý và lập lịch sử dụng tài nguyên tính toán (CPU hay memory) cũng như giám sát quá trình thực thi các ứng dụng đó.
+* YARN có 2 trình xử lý:
+    * ResourceManager: quản lý toàn bộ tài nguyên tính toán của cụm.
+    * NodeManager: giảm sát việc sử dụng tài nguyên (CPU, memory, disk, network,...) của container và báo cáo với ResourceManager.
+* ResourceManager có hai thành phần quan trọng:
+    * Scheduler: Có trách nhiệm phân bổ tài nguyên cho các ứng dụng khác nhau.
+    * ApplicationManager: Có chức năng:
+        * Nhận một job được submit
+        * Tìm 1 container hợp lý để thực thi ApplicationMaster.
+        * Khởi động lại container ApplicationMaster khi không thành công.
+##### 1.3.5. Hadoop Common
+* Hadoop Common là một bộ các library hoặc utilities giúp hỗ trợ các module khác của Hadoop.
+* Người ta còn gọi với 1 cái tên khác là Hadoop Core.
+
 
 
 
