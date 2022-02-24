@@ -46,7 +46,7 @@ Slave gồm 1 hoặc nhiều DataNode để lưu trữ dữ liệu.
    - Slave - Task Tracker: Theo dõi các task và báo cáo trạng thái các task cho Job Tracker
 ##### 1.3.4. YARN (Yet Another Resource Negotiator)
 * YARN là một framework cung cấp các daemon và API cần thiết giúp phát triển ứng dụng phân tán.
-* YARN chịu trách nhiêm xử lý và lập lịch sử dụng tài nguyên tính toán (CPU hay memory) cũng như giám sát quá trình thực thi các ứng dụng đó.
+* YARN chịu trách nhiệm xử lý và lập lịch sử dụng tài nguyên tính toán (CPU hay memory) cũng như giám sát quá trình thực thi các ứng dụng đó.
 * YARN có 2 trình xử lý:
     * ResourceManager: quản lý toàn bộ tài nguyên tính toán của cụm.
     * NodeManager: giảm sát việc sử dụng tài nguyên (CPU, memory, disk, network,...) của container và báo cáo với ResourceManager.
