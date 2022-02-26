@@ -46,7 +46,7 @@ def hdfs(fileName):
     runCommandHdfs('hdfs dfs -put /data/'+fileName+' '+'/data/result_data/')
 
 def sleepTime():
-    time.sleep(3600)
+    time.sleep(3600 - datetime.now().second - datetime.now().minute*60)
 
 if __name__ == "__main__":
     
