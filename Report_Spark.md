@@ -52,7 +52,7 @@ Có 2 loại Transformation:
 
      * take: lấy một lượng giá trị từ RDD.        
  ### 3. Các khái niệm quan trọng trong Spark
- * Spark được hỗ trợ quản lý cụm bới 4 cụm:
+ * Spark được hỗ trợ quản lý cụm b 4 cụm:
    * Hadoop Yarn
    * Standalone
    * kubernetes
