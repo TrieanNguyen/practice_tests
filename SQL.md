@@ -10,4 +10,4 @@ l khi một suự kiện nào xảy ra ở một bảng nào đó trong csdl s�
 ##### 1.1 Khái niệm:
 * Là một thủ tục, một hàm phương thức sử dụng câu lệnh sql để thực hiện một nghiệp vụ nhất định.
 * Ví dụ: 
- * DELIMITER // CREATE PROCEDURE database_test.test2() BEGIN	SELECT *  FROM database_test.donhang; END // DELIMITER ; 
+   * DELIMITER // CREATE PROCEDURE database_test.test2() BEGIN	SELECT *  FROM database_test.donhang; END // DELIMITER ; 
