@@ -6,3 +6,8 @@ l khi một suự kiện nào xảy ra ở một bảng nào đó trong csdl s�
 * Ví dụ: 
   * Query: CREATE TRIGGER INSERT_DATA_DONHANG AFTER INSERT on donhang for EACH ROW INSERT into account values (100,1000)
   * Câu query trên có nghĩa là sau khi ta insert giá trị vào bảng donhang thì trong bảng account sẽ tự insert data một cách tự động.  
+#### 2. PROCEDURE
+##### 1.1 Khái niệm:
+* Là một thủ tục, một hàm phương thức sử dụng câu lệnh sql để thực hiện một nghiệp vụ nhất định.
+* Ví dụ: 
+ * DELIMITER // CREATE PROCEDURE database_test.test2() BEGIN	SELECT *  FROM database_test.donhang; END // DELIMITER ; 
