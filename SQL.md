@@ -6,6 +6,11 @@
 nghiệp. Một database thường được cài đặt kèm theo một hệ quản trị cơ sở dữ liệu
 (DBMS – Database Management System), tức là một phần mềm cho phép người dùng
 định nghĩa, tạo mới, điều khiển và quản trị một database.
+* Thiết kế của một database thường được đưa về dạng chuẩn 3 (3NF – 3th Normal Form), quy định rằng mỗi thực thể trong database phải thoả mãn các điều kiện sau:
+   - Giá trị của một thuộc tính phải là giá trị nguyên tố, tức là không phải một danh
+   sách các giá trị hoặc giá trị phức hợp (Chuẩn 1).
+   - Các thuộc tính không phải khoá phải phụ thuộc đầy đủ vào thuộc tính khóa(Chuẩn 2).
+   - Các thuộc tính không phải khoá phụ thuộc trực tiếp vào thuộc tính khóa(Chuẩn 3).
 #### 1. TRIGGER
 ##### 1.1. Khái niệm:
 * Trigger là một đối tượng được định danh trong CSDL và luôn gắn chặc với một sự kiên xảy ra trên một bản nào đó. Các sự kiện ở đây có thể là: insert, update, deleted. Có nghĩa có
