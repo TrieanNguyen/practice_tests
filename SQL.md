@@ -1,4 +1,11 @@
 ### KIẾN THỨC CƠ BẢN VỀ SQL
+#### Khái niệm database:
+* là phân hệ trung tâm của các hệ thống nghiệp vụ xử lý dữ liệu giao dịch.
+* Database bao gồm một tập hợp dữ liệu có cấu trúc và một bản thông tin mô tả dữ liệu có cấu trúc đó
+(metadata), được thiết kế cho nhu cầu lưu trữ và xử lý thông tin của tổ chức, doanh
+nghiệp. Một database thường được cài đặt kèm theo một hệ quản trị cơ sở dữ liệu
+(DBMS – Database Management System), tức là một phần mềm cho phép người dùng
+định nghĩa, tạo mới, điều khiển và quản trị một database.
 #### 1. TRIGGER
 ##### 1.1. Khái niệm:
 * Trigger là một đối tượng được định danh trong CSDL và luôn gắn chặc với một sự kiên xảy ra trên một bản nào đó. Các sự kiện ở đây có thể là: insert, update, deleted. Có nghĩa có
