@@ -24,3 +24,20 @@ là đảm bảo toàn vẹn dữ liệu, xử lý giao dịch, truy cập song 
 * Là một thủ tục, một hàm phương thức sử dụng câu lệnh sql để thực hiện một nghiệp vụ nhất định.
 * Ví dụ: 
    * DELIMITER // CREATE PROCEDURE database_test.test2() BEGIN	SELECT *  FROM database_test.donhang; END // DELIMITER ; 
+#### 3. INDEX 
+##### 1.1 Khái niệm:
+*  Công cụ tìm kiếm cơ sở dữ liệu có thể sử dụng để tăng nhanh thời gian và hiệu suất truy xuất dữ liệu. Hiểu đơn giản, một chỉ mục là một con trỏ chỉ tới từng giá trị xuất hiện trong bảng/cột được đánh chỉ mục. 
+*  Các kiểu index có trong SQL:
+    * Single-Column Index: là đánh index cho một cột duy nhất
+      * Cú Pháp:
+         * CREATE INDEX ten_index ON ten_bang (ten_cot);
+    * Unique Index: là chỉ mục duy nhất, được sử dụng để tăng hiệu suất và đảm bảo tính toàn vẹn dữ liệu. Một chỉ mục duy nhất không cho phép chèn bất kỳ giá trị trùng lặp nào được chèn vào bảng
+      * Cú Pháp:
+         * CREATE UNIQUE INDEX ten_index ON ten_bang (ten_cot);
+    * Composite Index:  là chỉ mục kết hợp dành cho hai hoặc nhiều cột trong một bảng.
+       * Cú Pháp:
+         * CREATE UNIQUE INDEX ten_index ON ten_bang (cot1, cot2);
+
+
+
+
